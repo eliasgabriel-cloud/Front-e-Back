@@ -1,0 +1,12 @@
+<div class="detalhes-container" *ngIf="produto">
+  <h1>{{ produto.nome }}</h1>
+  <p><strong>Marca:</strong> {{ produto.marca }}</p>
+  <p><strong>Preço:</strong> R$ {{ produto.preco | number:'1.2-2' }}</p>
+  <p><strong>Quantidade:</strong> {{ produto.quantidade }}</p>
+  <button (click)="voltar()">Voltar</button>
+
+</div>
+
+<div *ngIf="!produto">
+  <p>Carregando produto...</p>
+</div>

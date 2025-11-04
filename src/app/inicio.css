@@ -1,0 +1,27 @@
+.container {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(226, 83, 0, 0.445);
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.produto {
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+  background-color: #e6f7ff;
+}
